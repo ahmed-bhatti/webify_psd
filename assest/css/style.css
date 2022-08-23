@@ -39,7 +39,7 @@ a:hover{
 .workflow{
     /* background: url('../images/Workflow.png');
      */
-     background:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/Workflow.png') no-repeat top center;
+     background:  linear-gradient(rgb(6, 21, 39,0.5),rgb(6, 21, 39,0.5)), url('../images/Workflow.png') no-repeat top center;
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: polygon(100% 0, 100% 92%, 53% 100%, 0 93%, 0 0);
