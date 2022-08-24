@@ -13,11 +13,13 @@
 </head>
 
 <body>
-    <section class="workflow">
-        <div class="container ">
+
+    <header>
+ 
             <nav class="navbar navbar-expand-lg">
+                <div class="container ">
                 <img class="navbar-brand nav-logo" src="./assest/images/nav-logo.png"></img>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon text-white"><i class="fa-solid fa-bars"></i></span>
                 </button>
@@ -43,7 +45,40 @@
                         </li>
                     </ul>
                 </div>
+                </div>
             </nav>
+             
+              
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Webify</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Service </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Workflow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">CaseStudy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Contact</a>
+                        </li>
+                        </ul>
+                </div>
+              </div>
+
+    </header>
+
+    <section class="workflow">
+       
 
             <div class="webi-agency">
                 <div class="col-12">
@@ -57,6 +92,11 @@
 
         </div>
     </section>
+
+
+
+
+
     <section>
         <div class="container">
             <div class="col-12">
@@ -158,7 +198,13 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="similar">
-                        <img src="./assest/images/cust-1.png" alt="">
+                        <div class="cus-profile">   
+                             <img src="./assest/images/cust-1.png" alt=""> 
+                             </div>
+                             <div class="icon-bot mt-3 ms-2">
+                             <img src="./assest/images/images/img-bot.png" alt="">
+                        </div>
+                    
                         <p>Working with Igal is a treat! When it comes to understanding SEO inside out and how to apply
                             it in organizations of different sizes and industries, he really is the best of the best.
                         </p>
@@ -176,7 +222,12 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="similar">
-                        <img src="./assest/images/cust-2.png" alt="">
+                        <div class="cus-profile">   
+                            <img src="./assest/images/cust-2.png" alt=""> 
+                            </div>
+                            <div class="icon-bot mt-3 ms-2">
+                            <img src="./assest/images/images/img-bot.png" alt="">
+                       </div>
                         <p>I've been working with Igal for over 8 years, and will recommend his new agency to anyone
                             who's looking for a genuine organic growth strategy. Igal is not just an SEO expert, he
                             truly gets International Search, a rare mix of Technical and Marketing-oriented SEO.</p>
@@ -184,9 +235,9 @@
                             <p><b>Neta Geffen,</b><span>Directer of Organic Growth miro.</span></p>
                         </div>
                         <center>
-                            <div class="after"></div>
+                            <div class="after-bar"></div>
                         </center>
-                        <div class="simi ">
+                        <div class="miro ">
                             <span><img src="./assest/images/micro.png" alt=""></span>
                         </div>
                     </div>

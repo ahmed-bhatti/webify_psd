@@ -13,6 +13,8 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #011a39;
 }
+
+
 h1,h2,h3,h4,h5,h6{
     font-weight: 700;
     color: #323232;
@@ -27,11 +29,26 @@ a:hover{
     text-decoration: none;
     color: white;
 }
+.navbar{
+    background-color: transparent;
+}
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
+}
+.offcanvas{
+    background-color: #00152e;
+}
+.offcanvas-title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.btn-close{
+    color: #fff;
+    background-color: wheat;
 }
 .container{
     max-width: 1140px !important;
@@ -43,6 +60,9 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: polygon(100% 0, 100% 92%, 53% 100%, 0 93%, 0 0);
+    position: relative;
+    top: -108px;
+    z-index: -1;
 
 }
 .nav-item{
@@ -97,7 +117,8 @@ a:hover{
     color: #fff;
     font-size: 58px;
     font-weight: 700;
-    padding-top: 122px;
+    padding-top: 225px;
+    
 }
 .fintach p{
     color: #fff;
@@ -107,7 +128,7 @@ a:hover{
     padding-bottom: 160px;
 }
 .strategy{
-    padding-top: 78px;
+    /* padding-top: 50px; */
     text-align: center;
 }
 .strategy h3{
@@ -121,7 +142,7 @@ a:hover{
 .strategy p{
     font-size: 18px;
     font-weight: 400;
-    color: #a6b2c0;
+    color: #dde4ed;
     padding-top: 19px;
     margin-bottom: 77px;
 }
@@ -160,14 +181,14 @@ a:hover{
     max-width: 386px;
     border-radius: 50%;
     border: 1px solid #181831;
-    margin-top: 30px;
-    margin-left: 35px;
+    margin-top: 35px;
+    margin-left: 36px;
 }
 .work{
     background-color: #011a39;
     min-height: 319px;
     max-width: 315px;
-    border: 8px solid #ff961c;
+    border: 8px solid #fe693b;
     /* border-image: linear-gradient(180deg,#ff961c,#fe693b); */
     /* border-image-slice:1 ; */
     border-radius: 50%;
@@ -175,12 +196,12 @@ a:hover{
     color: #fff;
     font-weight: 700;
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 33px;
     justify-content: center;
-    justify-items: center;
-   justify-self: center;
+    align-items: center;
     font-size: 48px;
     padding-top: 70px;
+    line-height: 55px;
 }
 .our{
     margin-bottom: 100px;
@@ -196,7 +217,7 @@ a:hover{
 }
 .list p{
     padding: 5px 25px;
-    background-image: linear-gradient(90deg,#f8842f, #cf4152);
+    background-image: linear-gradient(90deg,#f8842f, #ef3a4a);
     border-radius: 50%;
     color: #fff;
     text-align: center;
@@ -270,13 +291,14 @@ a:hover{
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
 .similar img{
     margin-top: -60px;
     text-align: center;
 }
 .similar p{
     color: #fff;
-    padding-top: 15px;
+    margin-top: -14px;
     font-weight: 500px;
     font-size: 18px;
     line-height: 25px;
@@ -291,17 +313,27 @@ a:hover{
 .simi{
     padding-top: 10px;
 }
+.miro{
+    padding-top: 10px;
+}
 .anot{
     margin-bottom: 0px !important;
+    padding-top: 20px;
+}
+.neta{
+    padding-top: 15px;
 }
 .anot b{
     padding-right: 5px;
 }
 .anot span {
-    color: #a6b2c0;
+    color: #d0d9e4;
 }
 .neta p{
     padding-top: 18px;
+}
+.neta span{
+    color: #d0d9e4;
 }
 .neta b{
     padding-right: 5px;
@@ -313,6 +345,13 @@ a:hover{
     margin-bottom: 10px;
     margin-top: -3px;
     
+}
+.after-bar{
+    width: 23px;
+    height: 2px;
+    background-color: #2b449c;
+    margin-bottom: 10px;
+    margin-top: 25px;
 }
 .similar span img{
     margin-top: 0px;
@@ -390,6 +429,7 @@ a:hover{
 .terms{
     padding-top: 80px;
     color: #a6b2c0;
+    font-size: 16px;
     
     
 }
@@ -431,12 +471,12 @@ a:hover{
 
 
 .text1{
-    color: #a6b2c0;
+    color: #d0d9e4;
     margin-top: 42px;
     padding-bottom: 30px;
 }
 .home-1{
-    color: #fff;
+    color: #d0d9e4;
     display: flex;
     /* margin: 10px; */
     flex-direction: column;
@@ -454,6 +494,7 @@ a:hover{
     background-color: #1a2d43;
     width: 40px;
     text-align: center;
+    margin-left: -2px;
 }
 
 .bot{
