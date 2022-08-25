@@ -34,10 +34,27 @@ a:hover{
     outline: none;
     box-shadow: none;
 }
+.navbar-toggler-icon{
+             padding-right: -10px;
+}
+button, input, optgroup, select, textarea{
+    margin-right: -17px;
+}
+.offcanvas{
+    background-color: #00152e;
+}
+.offcanvas-title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.btn-close{
+    color: #fff;
+    background-color: wheat;
+}
 .container{
     max-width: 1140px !important;
 }
-
 .background{
     background: url('/assest/images/sec-1-background.png');
     background-position: center;
@@ -51,7 +68,7 @@ a:hover{
     margin-top: -15px;
 }
 .navbar-nav{
-    margin-left: 90px;
+    margin-left: 85px;
 }
 .nav-link,.nav-link:hover{
     color: white;
@@ -87,10 +104,7 @@ a:hover{
 
 }
 .request button span{
-    padding-left: 15px;
-}
-.arrow{
-    padding-left: 5px;
+    padding-left: 20px;
 }
 .top{
     margin-top: 100px;
@@ -269,8 +283,6 @@ a:hover{
     border-radius: 15px;
     text-align: center;
     margin-top: 60px;
-    height: 410px;
-    width: 1100px;
     
 }
 .master{
@@ -282,13 +294,11 @@ a:hover{
     padding-top: 30px;
     color: #fff;
     text-align: center;
-    max-width: 1020px; 
     padding-left: 60px;
     padding-bottom: 15px;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 2px;
-    /* word-spacing: 10px; */
 
 }
 .kevin{
@@ -449,6 +459,9 @@ a:hover{
 .neta p{
     padding-top: 18px;
 }
+.neta span{
+    color: #a6b2c0;
+}
 .neta b{
     padding-right: 5px;
 }
@@ -464,14 +477,41 @@ a:hover{
     margin-top: 0px;
 }
 .contain {
-    background: url('../images/Rounded\ Rectangle\ 8\ copy.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #00152e;
     background-size: cover;
     max-width: 1140px;
-    border: 1px solid #3048a6;
+    /* width: 100%; */
     margin-top: 80px;
     border-radius: 10px;
+    border: 1px solid #3048a6;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.contain::before{
+    content: url('/assest/images/contain-top.jpeg');
+    width: 184px;
+    height: 130px;
+    position: absolute;
+    right: -25px;
+}
+.contain::after{
+    content: url('../images/contain-bot.jpeg');
+    width: 287px;
+    height: 152px;
+    position:absolute;
+    bottom: -15px;
+    left: -80px;
+}
+.cta-3{
+    position: absolute;
+    top: -30px;
+    left: 170px;
+   
+}
+.start{
+    text-align: center;
+
 }
 .start h1{
     font-size: 58px;
@@ -491,20 +531,28 @@ a:hover{
     color: #FF961C;
     text-decoration: underline;
 }
-.request-1 button{
+.with{
+    padding-bottom: 20px !important;
+}
+.request-1{
+    margin-top: 90px;
+    margin-bottom: 97px;
+}
+.request-1 a{
     background-color: transparent;
     border-radius: 30px;
+    padding: 19px 38px;
     border: 1px solid #fff;
     height: 64px;
     width: 264px;
-    color: #fff;
-    margin-bottom: 78px;
+    color: #fff !important;
+    
     
 }
-.request-1 button img{
+.request-1 a img{
     padding-left: 15px;
 }
-.request-1 button:hover{
+.request-1 a:hover{
     background-image: linear-gradient(90deg,#f8842f, #cf4152);
     border: none;
 
@@ -524,7 +572,7 @@ a:hover{
     margin-top: 80px;
 }
 .terms{
-    padding-top: 100px;
+    padding-top: 80px;
     color: #a6b2c0;
 }
 .nav p{
@@ -596,12 +644,9 @@ a:hover{
     
 }
 @media (max-width:1150px){
-    .navbar-nav{
-        margin-left: 0px;
-}
-.request button{
-         width: 220px;
-}
+    .request{
+        display: none;
+    }
 .trans {
      height: 280px; 
      width: 160px;
@@ -633,12 +678,16 @@ a:hover{
 
 }
 @media (max-width:1100px){
-    .request {
-        display: none;
+    .navbar-nav{
+        margin-left: 0px;
     }
+    .navbar-toggler-icon{
+        padding-right: -30px;
+}
     .master p{
         font-size: 20px;
     }
+    
 }
 @media(max-width:1000px){
     .request-1{
@@ -650,6 +699,9 @@ a:hover{
     .home-1{
         flex-direction: row;
         margin-bottom: 40px;
+    }
+    .similar{
+        margin: 50px auto;
     }
 }
 @media(max-width:1075px){
@@ -675,6 +727,40 @@ a:hover{
     }
     .get button{
         margin-top: 40px;
+    }
+}
+@media(max-width:756px){
+    .nav-logo{
+        width: 200px;
+    }
+    .start{
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    .cta-3{
+        left: 30px;
+    }
+    
+    
+    .start h1{
+        font-size: 30px;
+    }
+    .start b{
+        font-size: 14px;
+    }
+    .start span{
+        font-size: 14px;
+    }
+    .request-1 a{
+        background-color: transparent;
+        border-radius: 30px;
+        padding: 13px 20px;
+        border: 1px solid #fff;
+        height: 64px;
+        width: 264px;
+        font-size: 14px;
+        
+        
     }
 }
 @media(max-width:779px){
@@ -728,6 +814,14 @@ a:hover{
     }
     .neta{
         font-size: 12px;
+    }
+    .trans{
+        margin:10px auto;
+    }
+}
+@media(max-width:530px){
+    .similar{
+        min-height: 400px;
     }
 }
 

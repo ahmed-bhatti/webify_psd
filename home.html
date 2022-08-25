@@ -19,8 +19,9 @@
     <section class="background">
         <div class="container ">
             <nav class="navbar navbar-expand-lg">
-                <img class="navbar-brand nav-logo" src="./assest/images/nav-logo.png"></img>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <div class="container ">
+                <a href="home.html"><img class="navbar-brand nav-logo" src="./assest/images/nav-logo.png"></img></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon text-white"><i class="fa-solid fa-bars"></i></span>
                 </button>
@@ -42,11 +43,38 @@
                             <a class="nav-link " href="#">Contact</a>
                         </li>
                         <li class="request">
-                            <button>Request Proposal<span><img src="./assest/images/arow.png" alt=""></span></button>
+                            <button >Request Proposal<span><img src="./assest/images/arow.png" alt=""></span></button>
                         </li>
                     </ul>
                 </div>
+                </div>
             </nav>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Webify</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Service </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Workflow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">CaseStudy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Contact</a>
+                        </li>
+                        </ul>
+                </div>
+              </div>
+             
             <div class="fintach">
                 <div class="row top ">
                     <div class="col-md-8 seo">
@@ -67,7 +95,7 @@
         <div class="container-fluid">
             <div class="what ">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-12">
                         <div class="title">
                             <h2>What Makes Us <span>Different ?</span> </h2>
                         </div>
@@ -181,7 +209,7 @@
                 </div>
                 <div class="row">
                     <!-- <div class="owl-carousel owl-theme mt-4" id="project_carousel1"> -->
-                    <div class="col-12 borders">
+                    <div class="col-lg-12 borders">
                         <div class="text-center team">
                             <img src="./assest/images/team.png" alt="">
                         </div>
@@ -306,18 +334,21 @@
         <div class="container ">
             <div class="row">
                 <div class="col-lg-12 ">
-                    <div class="text-center start contain">
+                    <div class="contain p-3">
+                        <img class="cta-3" src="./assest/images/cta3.png" alt="">
+                    <div class=" start">
                         <h1>How to get-started</h1>
-                        <b>Get in Touch with Us &nbsp;</b><span>seo@webify.lo </span>
+                      <div class="with"><b>Get in Touch with Us &nbsp;</b><span>seo@webify.lo </span></div>
                         <div class="request-1 mt-lg-5">
-                            <button>REQUEST PROPOSAL <img src="./assest/images/arow.png" alt=""></button>
+                            <a href="#">REQUEST PROPOSAL <img src="./assest/images/arow.png" alt=""></a>
                         </div>
                     </div>
-
+                </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="footer ">
         <div class="container bot">
@@ -336,9 +367,9 @@
                         <p></p>
                     </div>
                     <div class="home">
-                        <a href="#">Home </a>
+                        <a href="home.html">Home </a>
                         <a href="#">Service </a>
-                        <a href="#">Workflow </a>
+                        <a href="index.html">Workflow </a>
                         <a href="#">Case Studies </a>
                         <a href="#">About </a>
                     </div>
