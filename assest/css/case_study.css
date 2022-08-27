@@ -592,9 +592,9 @@ button, input, optgroup, select, textarea{
     .neta{
         font-size: 14px;
     }
-    html,body{
+    /* html,body{
         overflow-x: hidden;
-    }
+    } */
 }
 
 
@@ -688,6 +688,9 @@ button, input, optgroup, select, textarea{
     
     .nav-logo{
         max-width: 200px;
+    }
+    .card{
+        margin: 10px auto;
     }
     
     

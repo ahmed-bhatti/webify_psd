@@ -227,6 +227,9 @@ button, input, optgroup, select, textarea{
     padding-bottom:80px;
     margin-bottom: 100px;
 }
+.igal{
+    position: relative;
+}
 .igal h2{
     font-size: 42px;
     font-weight: 600;
@@ -236,14 +239,15 @@ button, input, optgroup, select, textarea{
     color: #ff961c;
     font-weight: 400;
 }
-.igal .before::after{
+.igal .before::before{
     content: '';
     height: 5px;
     width: 30px;
     color: red;
     display: block;
     position: absolute;
-    left: 0px;
+    left: -30px;
+    top: 60px;
 }
 .igal p{
     font-weight: 400;
