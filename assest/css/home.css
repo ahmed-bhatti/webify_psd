@@ -24,6 +24,10 @@ a{
     transition: all 0.4s ease;
     font-weight: 500;
 }
+.nav-logo{
+    width: 238px;
+    height: 100%;
+}
 a:hover{
     text-decoration: none;
     color: white;
@@ -54,6 +58,10 @@ button, input, optgroup, select, textarea{
 }
 .container{
     max-width: 1140px !important;
+    
+}
+.left{
+    padding-left: 15px !important;
 }
 .background{
     background: url('/assest/images/sec-1-background.png');
@@ -559,11 +567,7 @@ button, input, optgroup, select, textarea{
 }
 .footer{
     margin-top: 100px;
-    /* background: url('../images/footer.png'); */
     background-color: #00152e;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     clip-path: polygon(47% 0, 100% 4%, 100% 100%, 0 100%, 0 6%);
 }
 .webi {
@@ -572,7 +576,7 @@ button, input, optgroup, select, textarea{
     margin-top: 80px;
 }
 .terms{
-    padding-top: 80px;
+    padding-top: 100px;
     color: #a6b2c0;
 }
 .nav p{
