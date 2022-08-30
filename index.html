@@ -9,6 +9,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assest/css/style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Work Flow</title>
 </head>
 
@@ -41,7 +43,7 @@
                             <a class="nav-link " href="about.html">About</a>
                         </li>
                         <li class="request">
-                            <button >Request Proposal<span><img src="./assest/images/arow.png" alt=""></span></button>
+                            <button  onclick="show_popup();">Request Proposal<span><img src="./assest/images/arow.png" alt=""></span></button>
                         </li>
                     </ul>
                 </div>
@@ -76,6 +78,7 @@
               </div>
 
     </header>
+   
 
     <section class="workflow">
        
@@ -92,12 +95,18 @@
 
         </div>
     </section>
-    <!-- <section>
-        <div class="container ">
+    
+    <section>
+
+       
+        <div class="container overlay ">
             <div class="row center ">
                 <div class="col-md-8 offset-md-1 back ">
                     <div class="signup-form">
                         <div class="form px-5   bg-light-shadow ">
+                            <div class="close " onclick="hide_popup();">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
                             <h3 class="mb-2 pt-3 us"> What Makes Us Different?</h3>
                             <p class="fill">Please fill out the short form below with your project details 
                                 and we will be in touch shortly.</p>
@@ -105,15 +114,19 @@
                                 <div class="row">
     
                                     <div class="mb-3 col-md-6">
+                                        <img src="./assest/images/name.png" class="far" alt="">
                                         <input type="text" name="firstname" class="form-control" placeholder=" Name">
                                     </div>
                                     <div class="mb-3 col-md-6">
+                                        <img src="./assest/images/email.png" class="far" alt="">
                                         <input type="text" name="lastname" class="form-control edit" placeholder="E-Mail">
                                     </div>
                                     <div class="mb-3 col-md-6">
+                                        <img src="./assest/images/url.png" class="far" alt="">
                                         <input type="email" name="email" class="form-control" placeholder="Your Website URl">
                                     </div>
                                     <div class=" mb-3 col-md-6">
+                                        <img src="./assest/images/budget.png" class="far" alt="">
                                        <select class="options" name="" id="">
                                         <option value="">Your Budget</option>
                                         <option value="">1000-3000</option>
@@ -122,11 +135,12 @@
                                        </select>
                                     </div>
                                     <div class="col-md-12">
+                                        <img src="./assest/images/message.png" class="far" alt="">
                                         <textarea name="" id="" cols="62" class="mess" rows="5" placeholder="Message"></textarea>
                                     </div>
                                     
                                     <div class="my-5 col-md-12 center-1 text-center ">
-                                        <div class="but"><a href="#" > SEND ME A PAROPOSAL <span><img src="./assest/images/arow.png" alt=""></span></a></div>
+                                        <div class="but" ><a href="#" > SEND ME A PAROPOSAL <span><img src="./assest/images/arow.png" alt=""></span></a></div>
                                        
     
                                     </div>
@@ -137,8 +151,9 @@
                 </div>
             </div>
         </div>
+        
     
-    </section> -->
+    </section>
 
 
 
@@ -158,7 +173,7 @@
                         Curabitur in ullamcorper lectus. Sed tempus, nisl vitae accumsan euismod, arcu lectus rutrum
                         ante, eget pulvinar sapien lacus a ligula. Duis sagittis enim dapibus dui suscipit, eget feugiat
                         massa finibus. Nulla cursus diam nibh, et accumsan magna iaculis ultricies.</p>
-                    <div><a href="#">REQUEST PROPOSAL <span><img src="./assest/images/arow.png" alt=""></span></a></div>
+                    <div><a href="#" onclick="show_popup();">REQUEST PROPOSAL <span><img src="./assest/images/arow.png" alt=""></span></a></div>
                 </div>
             </div>
         </div>
@@ -308,7 +323,7 @@
                         <h1>How to get-started</h1>
                       <div class="with"><b>Get in Touch with Us &nbsp;</b><span>seo@webify.lo </span></div>
                         <div class="request-1 mt-lg-5">
-                            <a href="#">REQUEST PROPOSAL <img src="./assest/images/arow.png" alt=""></a>
+                            <a href="#" onclick="show_popup();">REQUEST PROPOSAL <img src="./assest/images/arow.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -390,6 +405,15 @@
 
 
 
+
+<script>
+    function show_popup(){
+               $(".overlay").show();
+    }
+    function hide_popup(){
+               $(".overlay").hide();
+    }
+</script>
 
 
 

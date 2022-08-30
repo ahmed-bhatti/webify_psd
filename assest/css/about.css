@@ -59,7 +59,7 @@ button, input, optgroup, select, textarea{
     background-size: cover;
     clip-path: polygon(100% 0, 100% 92%, 53% 100%, 0 93%, 0 0);
     position: relative;
-    top: -108px;
+    margin-top: -108px;
     z-index: -1;
 
 }
@@ -120,11 +120,13 @@ button, input, optgroup, select, textarea{
     
 }
 .agency{
-    margin-top: -150px;
+    margin-top: 10px;
     padding-top: 120px;
     background-color: #00152e;
     padding-bottom: 100px;
-    clip-path: polygon(48% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+    position: relative;
+    margin-top: -40px;
+    z-index: -2;
 
 
 
@@ -227,6 +229,12 @@ button, input, optgroup, select, textarea{
     padding-bottom:80px;
     margin-bottom: 100px;
 }
+.profile img{
+    max-width: 483px;
+    min-height: 505px;
+    position: relative;
+    opacity: 1;
+}
 .igal{
     position: relative;
 }
@@ -234,20 +242,22 @@ button, input, optgroup, select, textarea{
     font-size: 42px;
     font-weight: 600;
     color: #fff;
+  
 }
  .igal .before{
     color: #ff961c;
     font-weight: 400;
+    padding-left: 50px;
 }
-.igal .before::before{
+.before1::after{
     content: '';
-    height: 5px;
-    width: 30px;
-    color: red;
+    height: 2px;
+    width: 40px;
+    background-color: #2b449c;
     display: block;
-    position: absolute;
-    left: -30px;
-    top: 60px;
+    position: relative;
+    left: 5px;
+    top: -32px;
 }
 .igal p{
     font-weight: 400;
@@ -262,30 +272,50 @@ button, input, optgroup, select, textarea{
 .profile{
     position: relative;
 }
-.profile:hover img{
-    /* position: absolute; */
+
+/* .profile:hover img{
     filter: grayscale(100%);
     -webkit-filter: grayscale(1000%);
     /* background-image: linear-gradient(90deg,#f8842f, #cf4152); */
-    transition: filter 0.5 ease-in-out;
+    /* transition: filter 0.5 ease-in-out; */
+/* } */
+.profile:hover .overlay{
+    display: block;
 }
 .profile .overlay{
     position: absolute;
     display: none;
-    top: 200px;
-    left: 200px;
+    min-height: 505px;
+    min-width: 483px;
+    background-image: -moz-linear-gradient( 0deg, rgb(0,0,0) 0%, rgb(254,133,40) 0%, rgb(236,52,76) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(0,0,0) 0%, rgb(254,133,40) 0%, rgb(236,52,76) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(0,0,0) 0%, rgb(254,133,40) 0%, rgb(236,52,76) 100%);
+    opacity: 0.702;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    display: none;
 }
-.profile:hover .overlay{
+  
+.profile:hover .overlay  {
     display: block;
     color: #fff;
     font-size: 22px;
-    border-radius: 50px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    
 }
-.overlay i{
+.overlay a i{
     color: #fe693b;
     background-color: #fff;
     padding: 10px;
     border-radius: 50px;
+    margin-right: 10px;
 
 }
 
@@ -343,7 +373,109 @@ input::placeholder{
 }
 
 
+.fill{
+    max-width: 470px;
+    font-size: 16px;
+    font-weight: 400px;
+    padding-left: 50PX;
+}
+.us {
+    color: #000;
+    font-size: 38px;
+    font-weight: 600;
+}
+.but a{
+     background-image: linear-gradient(90deg,#f8842f, #cf4152);
+    border-radius: 30px;
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    height: 64px;
+    width: 264px;
+    color: #fff !important;
+    
+}
+.but a span{
+    padding-left: 5px;
+}
+.back{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 20px;
+    max-width:669px;
+  position: absolute;
+  top:100px;
+}
+input::placeholder{
+    color: black;
+    padding-left: 0px;
 
+}
+textarea:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+textarea ::placeholder{
+    color: black;
+    padding-left: 10px;
+}
+.form-control{
+    color: black;
+    border: 1px solid #dde2ff;
+    height: 53px;
+    max-width: 307px;
+    display: block;
+    padding-left: 30px;
+}
+.far{
+    display: block;
+    position: relative;
+    top:33px;
+    left: 10px;
+}
+.options{
+    width: 100%;
+    height: 50px;
+    margin-right: 5px;
+    padding-left: 30px;
+    outline: none;
+    border: 1px solid #dde2ff;
+    color: #000;
+}
+.text{
+    margin-right: 4px;
+}
+.form-control::placeholder{
+    color: #000;
+}
+.mess{
+    width: 100%;
+    padding:10px ;
+    margin-right: 5px;
+    border: 1px solid #dde2ff;
+}
+.mess::placeholder{
+    color: #000;
+    padding-left: 25px;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.close i{
+    background-color: #fff;
+    padding: 5px 8px;
+    border-radius: 50%;
+    border: 1px solid #3048a6;
+    cursor: pointer;
+    color: #2b449c;
+}
+
+
+.overlay{
+    display: none;
+}
 
 
 
@@ -381,7 +513,7 @@ input::placeholder{
 .our-customer h1{
     text-align: center;
     color: #fff;
-    padding-top: 104px;
+    padding-top: 50px;
     padding-bottom: 50px;
 
 }
@@ -673,12 +805,15 @@ input::placeholder{
 
     .profile img{
         width:350px;
+        min-height: 367px;
+        border-radius: 25px;
 
     }
-   /* .igal-profile img{
-    max-width: 450px;
-    min-height: 500px;
-   } */
+    .profile .overlay{
+        min-width: 350px;
+        min-height: 367px;
+        
+    }
 
     .similar p{
         font-size: 14px;
@@ -703,6 +838,12 @@ input::placeholder{
     }
     .igal h2{
         padding-top: 30px;
+    }
+    .profile img{
+        margin: 10px auto;
+    }
+    .igal{
+        margin: 10px auto;
     }
 }
 @media(max-width:1000px){
@@ -740,24 +881,43 @@ input::placeholder{
     .profile{
         margin: 10px auto;
     }
-    /* .igal-profile img{
-        max-width: 300px;
-        min-height: 400px;
-       } */
+   
+    .us{
+        font-size: 25px;
+    }
+    .fill{
+        padding-left: 20px;
+        font-size: 12px;
+    }
+    .but a{
+       padding: 10px 20px;
+       border: 1px solid #fff;
+       height: 50px;
+       width: 180px;
+       color: #fff !important;
+       font-size: 12px;
+       
+   }
+   .but a span{
+    display: none;
+   }
        .bom{
         margin: 10px auto;
        }
     .profile img{
-        width: 300px;
+        max-width: 300px;
+        min-height: 317px;
         margin: auto;
+        border-radius: 22px;
+    }
+    .profile .overlay{
+        min-width: 300px;
+        min-height: 320px;
+        top: -1px;
+       
     }
     .igal h2{
            font-size: 30px;
-    }
-    .profile .overlay{
-       
-        top: 120px;
-        left: 100px;
     }
     
     
@@ -809,7 +969,7 @@ input::placeholder{
         padding-left: 20px;
     }
     .webi{
-        max-width: 250px;
+        max-width: 220px;
     }
     .ser-3{
         margin-left: 10px;
@@ -847,9 +1007,7 @@ input::placeholder{
 @media(max-width:430px){
     
     
-    .agency{
-        margin-top: -170px;
-    }
+   
     .similar {
         padding-bottom: 40px;
     }

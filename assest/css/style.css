@@ -140,7 +140,7 @@ button, input, optgroup, select, textarea{
 
 
 .fill{
-    width: 470px;
+    max-width: 470px;
     font-size: 16px;
     font-weight: 400px;
     padding-left: 50PX;
@@ -170,6 +170,7 @@ button, input, optgroup, select, textarea{
 }
 input::placeholder{
     color: black;
+    padding-left: 0px;
 
 }
 textarea:focus { 
@@ -179,18 +180,27 @@ textarea:focus {
 }
 textarea ::placeholder{
     color: black;
+    padding-left: 10px;
 }
 .form-control{
     color: black;
     border: 1px solid #dde2ff;
     height: 53px;
     max-width: 307px;
+    display: block;
+    padding-left: 30px;
+}
+.far{
+    display: block;
+    position: relative;
+    top:33px;
+    left: 10px;
 }
 .options{
     width: 100%;
     height: 50px;
     margin-right: 5px;
-    padding-left: 5px;
+    padding-left: 30px;
     outline: none;
     border: 1px solid #dde2ff;
     color: #000;
@@ -209,11 +219,29 @@ textarea ::placeholder{
 }
 .mess::placeholder{
     color: #000;
+    padding-left: 25px;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.close i{
+    background-color: #fff;
+    padding: 5px 8px;
+    border-radius: 50%;
+    border: 1px solid #3048a6;
+    cursor: pointer;
+    color: #2b449c;
+}
+.but a span{
+    padding-left: 5px;
 }
 
 
-
-
+.overlay{
+    display: none;
+}
 
 
 
@@ -744,6 +772,25 @@ textarea ::placeholder{
     .position{
         margin-left: 100px;
     } */
+    .us{
+        font-size: 25px;
+    }
+    .fill{
+        padding-left: 20px;
+        font-size: 12px;
+    }
+    .but a{
+       padding: 10px 20px;
+       border: 1px solid #fff;
+       height: 50px;
+       width: 180px;
+       color: #fff !important;
+       font-size: 12px;
+       
+   }
+   .but a span{
+    display: none;
+   }
     .start{
         padding-top: 90px;
         padding-bottom: 50px;

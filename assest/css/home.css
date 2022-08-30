@@ -265,6 +265,115 @@ button, input, optgroup, select, textarea{
 .pad{
     margin-top: 100px;
 }
+
+
+.fill{
+    max-width: 470px;
+    font-size: 16px;
+    font-weight: 400px;
+    padding-left: 50PX;
+}
+.us {
+    color: #000;
+    font-size: 38px;
+    font-weight: 600;
+}
+.but a{
+     background-image: linear-gradient(90deg,#f8842f, #cf4152);
+    border-radius: 30px;
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    height: 64px;
+    width: 264px;
+    color: #fff !important;
+    
+}
+.back{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 20px;
+    max-width:669px;
+  position: absolute;
+  top:100px;
+}
+input::placeholder{
+    color: black;
+    padding-left: 0px;
+
+}
+textarea:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+textarea ::placeholder{
+    color: black;
+    padding-left: 10px;
+}
+.form-control{
+    color: black;
+    border: 1px solid #dde2ff;
+    height: 53px;
+    max-width: 307px;
+    display: block;
+    padding-left: 33px;
+}
+.far{
+    display: block;
+    position: relative;
+    top:40px;
+    left: 10px;
+}
+.options{
+    width: 100%;
+    height: 50px;
+    margin-right: 5px;
+    padding-left: 30px;
+    outline: none;
+    border: 1px solid #dde2ff;
+    color: #000;
+}
+.text{
+    margin-right: 4px;
+}
+.form-control::placeholder{
+    color: #000;
+}
+.mess{
+    width: 100%;
+    padding:10px ;
+    margin-right: 5px;
+    border: 1px solid #dde2ff;
+}
+.mess::placeholder{
+    color: #000;
+    padding-left: 25px;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.close i{
+    background-color: #fff;
+    padding: 5px 8px;
+    border-radius: 50%;
+    border: 1px solid #3048a6;
+    cursor: pointer;
+    color: #2b449c;
+}
+.but a span{
+    padding-left: 5px;
+}
+
+
+.overlay{
+    display: none;
+}
+
+
+
+
 .about h1{
     text-align: center;
     color: #fff;
@@ -619,6 +728,7 @@ button, input, optgroup, select, textarea{
     flex-direction: column;
     margin-top: -5px;
     cursor: pointer;
+    margin-left: -7px;
 
 }
 .home-1 i:hover{
@@ -732,6 +842,9 @@ button, input, optgroup, select, textarea{
     .get button{
         margin-top: 40px;
     }
+    .check{
+        margin: 10px auto;
+    }
 }
 @media(max-width:756px){
     .nav-logo{
@@ -744,6 +857,27 @@ button, input, optgroup, select, textarea{
     .cta-3{
         left: 30px;
     }
+    .us{
+        font-size: 20px;
+        text-align: center;
+    }
+    .fill{
+        padding-left: 20px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .but a{
+       padding: 10px 20px;
+       border: 1px solid #fff;
+       height: 50px;
+       width: 180px;
+       color: #fff !important;
+       font-size: 12px;
+       
+   }
+   .but a span{
+    display: none;
+   }
     
     
     .start h1{
@@ -825,7 +959,11 @@ button, input, optgroup, select, textarea{
 }
 @media(max-width:530px){
     .similar{
-        min-height: 400px;
+        min-height: 440px;
+    }
+    .footer{
+        clip-path: polygon(0 2%, 51% 0, 100% 2%, 100% 100%, 0% 100%);
+
     }
 }
 
