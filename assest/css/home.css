@@ -56,9 +56,9 @@ button, input, optgroup, select, textarea{
     color: #fff;
     background-color: wheat;
 }
-.container{
-    max-width: 1140px !important;
-    
+header{
+    position: relative;
+    z-index: 10;
 }
 .left{
     padding-left: 15px !important;
@@ -68,7 +68,10 @@ button, input, optgroup, select, textarea{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: relative;
+    margin-top: -110px;
+    padding-top: 235px;
+    
 }
 .nav-item{
     padding: 12px;
@@ -114,8 +117,9 @@ button, input, optgroup, select, textarea{
 .request button span{
     padding-left: 20px;
 }
-.top{
-    margin-top: 100px;
+
+.seo{
+    padding-left: 30px;
 }
 .seo h1{
    color: #fff;
@@ -959,7 +963,7 @@ textarea ::placeholder{
 }
 @media(max-width:530px){
     .similar{
-        min-height: 440px;
+        min-height: 44d0px;
     }
     .footer{
         clip-path: polygon(0 2%, 51% 0, 100% 2%, 100% 100%, 0% 100%);
